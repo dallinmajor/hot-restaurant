@@ -8,7 +8,6 @@ var PORT = process.env.PORT || 3307;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
 require(".routes/apiRoutes")(app);
 require(".routes.htmlRoutes")(app);
 
