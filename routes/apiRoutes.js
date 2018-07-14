@@ -1,4 +1,4 @@
-var tableData = require('../data.tableData');
+var tableData = require('../data/tableData');
 var waitListData = require('../data/waitingListData');
 
 module.exports = function(app) {

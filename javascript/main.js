@@ -45,6 +45,7 @@ makeReservation(name, email, number, id);
 
 function makeReservation(name, email, number, id) {
     for (var i = 0; i < userReservation.length; i++) {
+        
         var table = userReservation[i];
 
         if (userReservation[i].reserved === true) {
