@@ -44,11 +44,19 @@ makeReservation(name, email, number, id);
 });
 
 function makeReservation(name, email, number, id) {
+
+    var count = 0;
     for (var i = 0; i < userReservation.length; i++) {
+
         var table = userReservation[i];
+
+        if (count === userReservation.length) {
+            
+        }
 
         if (userReservation[i].reserved === true) {
             console.log(table.table + "is already reserved")
+            count = count + 1;
         } else {
             table.name = name;
             table.email = email;
